@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contablito Proyect</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+    <div class="hero-container">
+        <h1>CONTABLITO</h1>
+        <div class="inner-cont">
+            <div class="hero-section">
+                
+                <div class="form-container">
+                        <h2>Ingrese sus datos:</h2>
+                        <form class="form" action="">
+
+                            <label for="descripcion">Descripción:</label>
+                            <input id="descripcion"type="text"> <br>
+            
+                            <label for="compraventa">Tipo de transacción:</label>
+                                
+                                <input id="compra" value="compra" name="compraventa" type="radio">
+                                <label class="compra" for="compra">Compra</label>
+            
+                                <input id="venta" value="venta" name="compraventa" type="radio">
+                                <label class="venta" for="venta">Venta</label> <br>
+            
+                            <label for="iva">Tipo IVA:</label>
+                                
+                                <input id="basico" value="basico" name="iva" type="radio">
+                                <label class="basico" for="basico">Básico</label>
+            
+                                <input id="minimo" value="minimo" name="iva" type="radio">
+                                <label class="minimo" for="minimo">Mínimo</label>
+            
+                                <input id="extento" value="extento" name="iva" type="radio">
+                                <label class="extento" for="extento">Extento</label> <br>
+            
+                            <label for="subtotal">Subtotal: </label>
+                            <input type="number" name="subtotal" id="subtotal"> <br>
+                            <p id="alerta" class="alerta"></p>
+            
+                            
+                        </form>
+                        <button id="submit-btn" class="submit-btn">Ingresar</button>
+                </div>
+
+            </div>
+            <div class="table-container">
+
+                    <div class="tabla-datos">
+                        <table class="tabla">
+                            <thead>
+                                <tr class="tr1">
+                                    <th>Descripción</th>
+                                    <th>Tipo</th>
+                                    <th>Subtotal($)</th>
+                                    <th>IVA($)</th>
+                                    <th>Total(IVA inc.)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-body" id="table-body">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="total">
+                        <p id="total-venta" >Total Venta: </p>
+                        
+                        <p id="total-compra" >Total Compra: </p>
+                    </div>
+
+            </div>
+
+        </div>  
+
+    </div>
+
+    <footer>
+
+        <a href="https://github.com/santidsds">
+            <img src="/github.png" alt="">
+        </a>
+        
+        <p>Developed by Santiago Da Silva</p>
+
+    </footer>
+
+</body>
+
+<script src="/index.js"></script>
+</html>
