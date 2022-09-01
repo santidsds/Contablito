@@ -6,10 +6,23 @@
 }
 
 body {
-  background-image: url(/249.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5em;
+}
+
+.limpiar-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+.limpiar-cont a {
+  color: red;
+  text-decoration: none;
+  font-size: 15px;
+}
+.limpiar-cont a:hover {
+  font-weight: 600;
 }
 
 .submit-btn {

@@ -117,3 +117,7 @@ function calcIva (subtotal, iva) {
         return 0;
     }
 }
+
+document.getElementById("limpiarBtn").addEventListener("click", ()=> {
+    tableBody.innerHTML = ""
+})
